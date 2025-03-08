@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Content: About Us Section -->
+      <div class="left-content">
+        <div class="about-us">
+          <h3>About Us</h3>
+          <p>
+            Sample text. Click to select the Text Element. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+          <a href="#" class="btn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Right Content: Swiper Slider Section -->
+      <div class="right-content">
+        <div class="swiper">
+          <!-- Swiper Wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <h3>Our Clients Say</h3>
+              <p>
+                "Aenean pulvinar dui ornare, feugiat lorem non, ultrices justo.
+                Mauris efficitur, mauris in auctor euismod, quam elit ultrices
+                urna, eget eleifend arcu risus id metus."
+              </p>
+              <h5>Alex Grinfield</h5>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <h3>Our Clients Say</h3>
+              <p>
+                "Aenean pulvinar dui ornare, feugiat lorem non, ultrices justo.
+                Mauris efficitur, mauris in auctor euismod, quam elit ultrices
+                urna, eget eleifend arcu risus id metus."
+              </p>
+              <h5>Marry Larson</h5>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <h3>Our Clients Say</h3>
+              <p>
+                "Aenean pulvinar dui ornare, feugiat lorem non, ultrices justo.
+                Mauris efficitur, mauris in auctor euismod, quam elit ultrices
+                urna, eget eleifend arcu risus id metus."
+              </p>
+              <h5>Marry Larson</h5>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <!-- Custom Arrows with Font Awesome Icons -->
+          <div class="swiper-button-prev">
+            <i class="fas fa-arrow-left"></i>
+            <!-- Font Awesome Left Arrow -->
+          </div>
+          <div class="swiper-button-next">
+            <i class="fas fa-arrow-right"></i>
+            <!-- Font Awesome Right Arrow -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true, // Enable infinite loop
+        autoplay: {
+          delay: 3000, // Delay between slides in milliseconds (3 seconds)
+          disableOnInteraction: false, // Continue autoplay even when user interacts with the slider
+        },
+        pagination: {
+          el: ".swiper-pagination", // Add pagination
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next", // Add next button
+          prevEl: ".swiper-button-prev", // Add previous button
+        },
+      });
+    </script>
+  </body>
+</html>
